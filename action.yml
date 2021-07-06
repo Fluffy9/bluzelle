@@ -1,0 +1,18 @@
+# action.yml
+name: 'bluzelle-action'
+description: 'upload generated files to Bluzelle DB as a web server'
+inputs:
+  UUID:  # id of input
+    description: 'Url safe root of your website'
+    required: false
+    default: 'my-sitex'
+  mnemonic: 
+    description: 'the seed of your bluzelle testnet wallet'
+    required: false
+    default: 'wink garment more rally beach before regret digital high like mandate blast labor happy few rib match valve state piece assist dentist trumpet dry'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.UUID }}
+    - ${{ inputs.mnemonic }}
