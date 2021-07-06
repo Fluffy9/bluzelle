@@ -43,7 +43,7 @@ jobs:
         source: ./site
 
     - name: Bluzelle
-      uses: fluffy9/bluzelle-action@1.3.3
+      uses: fluffy9/bluzelle-action@v1
       with: 
         UUID: 'website'
         mnemonic: ${{ secrets.MNEMONIC }}
@@ -76,7 +76,7 @@ jobs:
         cp -r _site/. ./site/public
     
     - name: Bluzelle
-      uses: fluffy9/bluzelle-action@1.3.3
+      uses: fluffy9/bluzelle-action@v1
       with: 
         UUID: 'website'
         mnemonic: ${{ secrets.MNEMONIC }}
