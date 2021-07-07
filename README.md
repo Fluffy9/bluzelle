@@ -82,17 +82,17 @@ jobs:
 
 
 6. You may use parameters to change the UUID of your site, or the wallet mnemonic to your own. 
-7. For security purposes, you may want to add your mnemonic as a repository secret. More information on that [here](https://docs.github.com/en/actions/reference/encrypted-secrets)
+7. For security purposes, you may want to add your mnemonic as a repository secret (as shown in the example). If not, you can either fill in your seed for this field or remove the field to use the default seed. More information on encrypted secrets [here](https://docs.github.com/en/actions/reference/encrypted-secrets)
 ![repository secrets](https://docs.github.com/assets/images/help/settings/actions-org-secrets-list.png)
 9. Commit your new workflow and you're done. Your files should upload on the next push.
-10. Your website will be available at https://client.sentry.testnet.private.bluzelle.com:1317/crud/raw/[UUID]/[file]. If you've not changed any settings, it will be available at https://client.sentry.testnet.private.bluzelle.com:1317/crud/raw/my-sitex/index.html
+10. Your website will be available at https://client.sentry.testnet.private.bluzelle.com:1317/crud/raw/[UUID]/[file]. If you've not set any settings, it will be available at https://client.sentry.testnet.private.bluzelle.com:1317/crud/raw/my-sitex/index.html using the default parameters
 
 
 > ## IMPORTANT NOTE: Regardless of the SSG you use, your build must output the final HTML files into a folder at ./site/public. You may also add extra steps to the workflow to make sure that those files end up there. This is what will be uploaded. 
 
 ### Working Example
 
-Fork this repo to see a working hugo site and workflow
+Having difficulties? Fork this repo to for a working hugo site and workflow. 
 https://github.com/Fluffy9/hugo-demo
 
 ## Issues 
