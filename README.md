@@ -33,7 +33,6 @@ jobs:
     - name: Website
       uses: actions/checkout@v2
       with:
-        repository: 'Fluffy9/hugo-demo'
         fetch-depth: 0
         path: site
     
@@ -64,7 +63,6 @@ jobs:
     - name: Website
       uses: actions/checkout@v2
       with:
-        repository: 'jekyll/example'
         fetch-depth: 0
     
     - name: Jekyll
